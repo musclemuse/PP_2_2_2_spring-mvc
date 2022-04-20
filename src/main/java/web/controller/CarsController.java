@@ -16,13 +16,6 @@ import java.util.List;
 @RequestMapping(value = "/")
 public class CarsController {
 
-//    private CarService carService;
-//    @Autowired
-//    public CarsController(CarService carService) {
-//        this.carService = carService;
-//    }
-
-    private Car car;
     @GetMapping(value = "cars")
     public String listOfCars(@RequestParam (required = false, defaultValue = "5", value = "count") int a, ModelMap model) {
         List<Car> listOfCars = new ArrayList<>();
