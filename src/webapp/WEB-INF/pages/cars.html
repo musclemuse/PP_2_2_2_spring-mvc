@@ -13,10 +13,10 @@
     <table>
         <caption>Cars</caption>
         <tr><th>Model</th><th>Color</th><th>Year</th></tr>
-        <th:block th:each="car: ${listOfCars}">
-            <tr><td> <h4 th:text="${car.getModel()}"></h4></td>
-                <td><h4 th:text="${car.getColor()}"></h4></td>
-                <td><h4 th:text="${car.getYear()}"></h4></td></tr>
+        <th:block th:each="cars: ${listOfCars}">
+            <tr><td> <h4 th:text="${cars.getModel()}"></h4></td>
+                <td><h4 th:text="${cars.getColor()}"></h4></td>
+                <td><h4 th:text="${cars.getYear()}"></h4></td></tr>
         </th:block>
     </table>
 </div>
